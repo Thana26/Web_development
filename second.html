@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #d{
+         border: 2px solid red;
+         margin: blue;
+         padding: 10px;
+        }
+    </style>
+    <button onclick="fun()">Press this</button>
+    <p id="d">Thana Thana</p>
+    <script >
+        function fun()
+        {
+            let str=document.getElementById("d").innerHTML;
+            document.getElementById('d').innerHTML=str.replace("Thana","makthal");
+        }
+    </script> 
+</body>
+</html>
